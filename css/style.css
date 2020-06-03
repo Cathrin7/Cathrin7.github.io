@@ -302,7 +302,7 @@ nav a{
 	position: relative;
 	width: 200px; /* 220 - 20 padding */
 	float: left;
-	padding: 45px 10px 10px 10px;
+	padding: 45px 10px 30px 10px;
 	margin-top: -58px;
 	margin-bottom: 40px;
 	-webkit-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
