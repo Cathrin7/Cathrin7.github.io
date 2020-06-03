@@ -300,7 +300,7 @@ nav a{
 
 #sidebar{
 	position: relative;
-	width: 200px; /* 220 - 20 padding */
+	width: 1800px; /* 220 - 20 padding */
 	float: left;
 	padding: 45px 10px 30px 10px;
 	margin-top: -58px;
