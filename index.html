@@ -9,19 +9,14 @@
 <style>
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", Verdana, sans-serif;
-  font-style: bold;
+   font-family: "Montserrat", Verdana, sans-serif;
+   font-style: bold;
 }
 
 body {
   margin: 0;
-  font-family: "Hind Siliguri", Verdana, sans-serif;
-  font-size: 20px;
-}
-
-p {
- font-family: "Hind Siliguri", sans-serif;
- font-size: 16px;
+   font-family: "Hind Siliguri", Verdana, sans-serif;
+   font-size: 20px
 }
 
 
@@ -59,83 +54,54 @@ padding: 10px 10px 0px 0px;
   background-color: #ff2052;
 }
 
-.date {
-  padding: 20px 5px 0px ;
-  color: #ff2052; 
-}
-
-.line-center{
-    margin:0;padding:50px 10px; 
-    background:#fff;
-    display:inline-block;
-}
-
-h3{
-    text-align:left;
-    position:relative;
-    z-index:2;
-	font-size: 20px;
-	font-family: "Montserrat", Verdana, sans-serif;	
-}
-
-h3:after{
-    content:"";
-    position:absolute;
-    top:50%;
-    left:0;
-    right:0;
-    border-top:solid 2px red;
-    z-index:-1;
-}
-
-.headline{
- padding: 0px 0px 0px;
- }
-
-span.a {
-  display: inline; /* the default for span */
-  width: 10px;
-  height: 10px;
-  padding: 10px;
-  color: white;
-  background-color: #ff2052; 
-}
-
-.pictures {
-float: left;
-padding: 0px 50px 0px 0px;
-}
-
-
 
 /* Style the content */
 .content {
   background-color: white;
-  padding: 10px 50px 100px 20px;
+  padding: 10px 50px 50px 50px;
   font-family: "Hind Siliguri", Verdana, sans-serif;
   /*height: 200px; /* Should be removed. Only for demonstration */
 }
 
-.inside {
-  padding: 20px 20px 10px 20px;
-  border-color: #ff2052;
-  font-family: "Hind Siliguri", Verdana, sans-serif;
+.picture {
+float: right;
+margin: 10px 50px 5px 50px;
+}
+
+p {
+ font-family: "Hind Siliguri", sans-serif;
+ font-size: 16px;
+}
+
+p.small {
+line-height: 0.5;
+}
+
+
+/* Style the table */
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  font-style: normal;
+  font-size:12px;
 
 }
 
-.button {
-  background-color: #f1f1f1;
-  border: none;
-  color: black;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 4px 2px;
-  cursor: pointer;
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #333;
+  color: white;
+}
 
 
 /* Style the footer */
@@ -169,75 +135,115 @@ padding: 0px 50px 0px 0px;
 </style>
 </head>
 <body>
-
 <div class="topnav">
   <a class="active" href="index.html">HOME</a>
-  <a href="About.html">ABOUT</a>
-  <a href="publications.html">PUBLICATIONS</a>
-<!--  <s class="social" href="https://twitter.com/KatjaZia"><img src="img/Twitt.png"></s>
-  <s class="social" href=""><img src="img/youtube.png"></s>-->
+
 </div>
 
-<div class="content">
-<!--	<div class="headline">
-	<h2><span class="a">NEWS</span></h2> -->
-    <p> This site is still a bit wonky becasue it is under construction. It will get better, I promise.</p>
-	 
-  
-  
-  
-	<div class="col-9 date">
-	<h3><span class="line-center">MARCH 2021</span></h3>
-	</div> 
-		
-		<div class="col-9 inside">
-			<a class="pictures"><img src="img/msca.png"width="309" height="110"></a> 
-			<p>My EU project under the Marie Sklodowska Curie Individual Fellowship actions will be funded! The "ForEVR" project will explore the posibilities of manipulating motion of virtual characters in virtual reality to affect user's perception. More coming soon!                                                                                                                                                                          </p>
-			<!--<a href="https://sap.acm.org/" class="button">Website</a>-->
-			
-			
-		</div> 
-		
-  	<div class="col-9 date">
-	<h3><span class="line-center">FEBRUARY 2021</span></h3>
-	</div> 
-	 
-		<div class="col-9 inside">
-			<a class="pictures"><img src="img/SAP2021.png" width="309" height="100"></a> 
-			<p>Symposium on Applied Perception will be hosted in Rennes, France this year (16-17 September, 2021). We are hoping to organise a hybrid confernece, with in-person and online attendance.</p>
-			<a href="https://sap.acm.org/" class="button">Website</a>
-			
-			
-		</div> 
-     
-	<div class="col-9 date">
-	<h3><span class="line-center">JANUARY 2021</span></h3>
-	</div> 
-	 
-		<div class="col-9 inside">
-			<a class="pictures"><img src="img/VHCIE.png" width="309" height="145"></a> 
-			<p>We are hosting an online workshop at IEEEVR 2021 titled: Virtual Humans and Crowds in Immersive Environments. See website for more information. </p>
-			<a href="http://files.inria.fr/vhcie/index.html" class="button">Website</a>
-			
-			
-		</div> 
 
-	
-	<div class="col-9 date">
-	<h3><span class="line-center">SEPTEMBER 2020</span></h3>
-	</div>   
-	
-		<div class="col-9 inside">	
-			<a class="pictures"><img src="img/GenderPrioximity.png" width="312" height="150"></a> 
-			<p>In our new paper, we investigate how gender and attractiveness observed from motion can affect peoples' proximity. It recieved "Best Paper Award" at Symposium on Applied Perception 2020.</p>
-			<a href="https://dl.acm.org/doi/pdf/10.1145/3419985?casa_token=O1-fRTvhKSQAAAAA:BqBlTWyhejvo9hu-uLnPRy_4or59FlMaZxymb1Do7XhAbk1qxrjeKarbt_GFkVHV5MgLcrKeYA" class="button">Paper</a>
-		</div> 
-	 
-	</div>
-</div>
+<div class="col-9 content">
+	<a class="picture"><img src="img/me5.png" width="225" height="246"></a>
+    <h4>Dr. Katja Zibrek </h4>
+	<h5></h5>
+    <p> I am a MSCA-IF Postdoctoral Researcher at Inria Rennes, France. My main area of investigation is the perception of virtual humans in Virtual Reality. I use the methods from psychology and computer science to understand the impact of virtual human on users' subjective and behavioral response.</p>
 
-<div class="footer">  
+
+	<h4>Contact</h4>
+	<p class="small">Dr. Katja Zibrek</p>
+	<p class="small">Inria, VirtUs team</p>
+	<p class="small">E-mail: katja.zibrek@inria.fr</p>
+
+	<p class="small">Campus de Beaulieu</p>
+	<p class="small">35042 Rennes Cedex, France</p>
+
+
+
+	<h3>   </h3>
+	<h4>Short CV</span></h4>
+	<h5>Professional experience</h5>
+
+<table id="customers">
+	<tr>
+		<th>Dates</th>
+		<th>Position</th>
+		<th>Institution</th>
+	</tr>
+	<tr>
+		<td>2021 - </td>
+		<td>MSCA-IF Postdoctoral Researcher: project ForEVR</td>
+		<td>Inria, Rennes, France</td>
+	</tr>
+	<tr>
+		<td>2020 - </td>
+		<td>Starting Research Position</td>
+		<td>Inria, Rennes, France</td>
+	</tr>
+		<tr>
+		<td>2017 – 2019</td>
+		<td>Postdoctoral researcher</td>
+		<td>Trinity College Dublin, Ireland</td>
+	</tr>
+  </table>
+	
+	<h5>Education</h5>
+	<table id="customers">
+	<tr>
+		<th>Dates</th>
+		<th>Level</th>
+		<th>Institution</th>
+	</tr>
+  
+	<tr>
+		<td>2013 –  2017</td>
+		<td>Doctorate Computer Science</td>
+		<td>School of Computer Science and Statistics, Trinity College Dublin, Ireland</td>
+	</tr>
+    
+	<tr>
+		<td>2004 – 2010</td>
+		<td>Diploma (B.Sc. + M.Sc.) Psychology</td>
+		<td>Department of Psychology, University of Ljubljana, Slovenia</td>
+	</tr>
+	</table>
+
+	<h5>Awards</h5>
+
+	<table id="customers">
+	<tr>
+		<th>Award</th>
+		<th>Description</th>
+	</tr>
+		<tr>
+		<td>European Funding</td>
+		<td>Individual Fellowship under the European Union’s Marie Skłodowska-Curie actions, project ForEVR H2020-MSCA-IF-2020; No. 101030793; amount: 184 707.84 EUR. Start date: September 2021
+		</td>
+	</tr>
+	<tr>
+		<td>Best paper awards </td>
+		<td>Title: “Investigating perceptually based models to predict importance of facial blendshapes’’ Granted by: Motion, Interaction and Games conference, on 18th October 2020.
+		</br>Title: “Is photorealism important for perception of expressive virtual humans in VR?” Granted by: Symposium on Applied Perception, on 20th September 2019.
+		</td>
+	</tr>
+		<td>Best poster awards </td>
+		<td>Title: “May I sit next to you? The effect of motion quality of virtual agents on the proximity in virtual reality’’ Granted by: Motion, Interaction and Games on 14th November 2021.
+		</td>
+	</tr>
+	<tr>
+		<td>Best presentation award </td>
+		<td>Title: “Exploring the effect of emotions on gender perception”, granted by: Symposium on Applied Perception, on 23rd August 2013; award prize: €75.
+		</td>
+	</tr>
+
+	<tr>
+		<td>“Presern award” Faculty award for  exceptional/innovative diploma thesis</td>
+		<td>Title: “The influence of the virtual environment on the emotional state and the feeling of presence in this environment”, granted by: Univerza v Ljubljani, on 2nd December 2010; award prize: €80
+		</td>
+	</tr>
+	</table>
+
+
 </div> 
+<div class="footer">
+   
+</div>
 
-</body>
-</html>
